@@ -1,0 +1,36 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+@import '_null';
+
+body {
+  line-height: 1;
+  font-family: 'HelveticaNeue-55Roman', sans-serif;
+  color: rgb(133, 135, 140);
+  background: #1a1a1a;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+[class*='__container'] {
+  margin: 0px auto;
+  max-width: 1140px;
+  padding: 0px 15px;
+}
+
+[class*='__ibg'] {
+  position: relative;
+}
+
+[class*='__ibg'] img {
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
