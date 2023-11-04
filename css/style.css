@@ -124,8 +124,13 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #fff;
 }
-.header__link:visited {
+.header__link {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   color: #fff;
+}
+.header__link:hover {
+  color: rgba(246, 250, 6, 0.9843137255);
 }
 .header__title {
   font-size: 26px;
@@ -164,25 +169,72 @@ body {
   display: flex;
   margin: 0px -14px;
 }
+.menu__list .menu__item:last-of-type {
+  border-right: 2px rgb(167, 176, 183) solid;
+}
 .menu__item {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 33.333%;
           flex: 1 1 33.333%;
   padding: 0px 14px;
-  -webkit-box-shadow: 2px 0px 1px rgb(167, 176, 183), 2px 0px 1px rgb(167, 176, 183) inset;
-          box-shadow: 2px 0px 1px rgb(167, 176, 183), 2px 0px 1px rgb(167, 176, 183) inset;
+  border-left: 2px rgb(167, 176, 183) solid;
 }
 .menu__item:hover {
   background: -webkit-gradient(linear, left bottom, left top, from(rgb(187, 208, 223)), to(rgb(243, 246, 249)));
   background: linear-gradient(0deg, rgb(187, 208, 223) 0%, rgb(243, 246, 249) 100%);
+}
+.menu__item-selected {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(253, 253, 253, 0)), to(rgb(180, 184, 187)));
+  background: linear-gradient(0deg, rgba(253, 253, 253, 0) 0%, rgb(180, 184, 187) 100%);
 }
 
 .item-menu {
   text-align: center;
   padding: 6px 0px;
 }
-.item-menu__link {
+.item-menu__text {
   font-size: 13px;
   font-weight: bold;
   color: #1c619b;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.footer__content {
+  background: rgb(23, 97, 156);
+  padding: 25px;
+}
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px -16px;
+}
+.footer__list .footer__item:first-of-type {
+  border: none;
+}
+.footer__item {
+  padding: 0px 16px;
+  border-left: 0.5px solid #cbe9ff;
+}
+
+.item-footer__link {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #cbe9ff;
+  font-size: 13px;
+}
+.item-footer__link:hover {
+  color: rgba(246, 250, 6, 0.9843137255);
+}
+.item-footer__link-selected {
+  text-decoration: underline;
+}
+.item-footer__link-selected:hover {
+  text-decoration: underline;
+  color: #cbe9ff;
 }
