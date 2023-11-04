@@ -314,8 +314,12 @@ main {
   // .footer__content
 
   &__content {
+    display: flex;
+    justify-content: space-between;
     background: rgb(23, 97, 156);
     padding: 25px;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 1px 1px 2px 1px rgb(167, 176, 183);
   }
 
   // .footer__list
@@ -333,6 +337,13 @@ main {
   &__item {
     padding: 0px 16px;
     border-left: 0.5px solid #cbe9ff;
+  }
+
+  // .footer__year
+
+  &__year {
+    color: #cbe9ff;
+    font-size: 13px;
   }
 }
 .item-footer {
