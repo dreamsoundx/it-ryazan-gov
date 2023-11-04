@@ -151,7 +151,6 @@ body {
 
   &__item {
     flex: 1 1 33.333%;
-    padding: 0px 14px;
     border-left: 2px rgb(167, 176, 183) solid;
     // box-shadow: 2px 0px 1px rgb(167, 176, 183),
     //   2px 0px 1px rgb(167, 176, 183) inset;
@@ -170,6 +169,9 @@ body {
       rgba(253, 253, 253, 0) 0%,
       rgb(180, 184, 187) 100%
     );
+  }
+
+  &__link {
   }
 }
 
@@ -232,8 +234,12 @@ main {
   // .news__item
 
   &__item {
-    padding: 10px;
+    transition: 0.3s;
     margin: 0px 0px 26px 0px;
+    border-radius: 10px;
+    &:hover {
+      box-shadow: 2px 3px 10px 1px rgb(167, 176, 183);
+    }
   }
 
   // .news__link
@@ -242,6 +248,7 @@ main {
   }
 }
 .link-news {
+  padding: 10px;
   display: flex;
   align-items: flex-start;
   column-gap: 10px;

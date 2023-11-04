@@ -176,7 +176,6 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 33.333%;
           flex: 1 1 33.333%;
-  padding: 0px 14px;
   border-left: 2px rgb(167, 176, 183) solid;
 }
 .menu__item:hover {
@@ -187,7 +186,6 @@ body {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(253, 253, 253, 0)), to(rgb(180, 184, 187)));
   background: linear-gradient(0deg, rgba(253, 253, 253, 0) 0%, rgb(180, 184, 187) 100%);
 }
-
 .item-menu {
   text-align: center;
   padding: 6px 0px;
@@ -227,10 +225,17 @@ main {
   background: rgb(240, 247, 255);
 }
 .news__item {
-  padding: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   margin: 0px 0px 26px 0px;
+  border-radius: 10px;
+}
+.news__item:hover {
+  -webkit-box-shadow: 2px 3px 10px 1px rgb(167, 176, 183);
+          box-shadow: 2px 3px 10px 1px rgb(167, 176, 183);
 }
 .link-news {
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
