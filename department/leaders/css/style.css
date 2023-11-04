@@ -250,7 +250,7 @@ main {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   max-width: 250px;
-  border: 2px solid rgba(233, 255, 34, 0.842);
+  border: 2px solid rgb(215, 236, 24);
   border-radius: 10px;
 }
 .link-news__item:hover {
