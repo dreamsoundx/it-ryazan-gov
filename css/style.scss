@@ -235,10 +235,12 @@ main {
 
   &__item {
     transition: 0.3s;
-    margin: 0px 0px 26px 0px;
     border-radius: 10px;
     &:hover {
       box-shadow: 2px 3px 10px 1px rgb(167, 176, 183);
+    }
+    &:not(:last-child) {
+      margin-bottom: 26px;
     }
   }
 

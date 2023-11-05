@@ -191,8 +191,8 @@ main {
   flex: 1 1 auto;
 }
 
-.leaders {
-  // .leaders__container
+.documents {
+  // .documents__container
 
   &__container {
     max-width: 800px;
@@ -200,19 +200,20 @@ main {
     margin: 0px auto;
   }
 
-  // .leaders__content
+  // .documents__content
 
   &__content {
     padding: 30px 0px;
   }
 
-  //  .leaders__titles
+  // .documents__titles
+
   &__titles {
     padding: 0px 0px 0px 10px;
     margin: 0px 0px 28px 0px;
   }
 
-  // .leaders__title
+  // .documents__title
 
   &__title {
     border-bottom: 1px solid #cc0000;
@@ -222,88 +223,36 @@ main {
     margin: 0px 0px 19px 0px;
   }
 
-  // .leaders__list
+  // .documents__list
 
   &__list {
-    & .leaders__item:nth-child(even) {
-      background: rgb(240, 247, 255);
-    }
+    padding: 0px 0px 0px 10px;
   }
 
-  // .leaders__item
+  // .documents__item
 
   &__item {
-    transition: 0.3s;
-    border-radius: 10px;
     &:not(:last-child) {
       margin-bottom: 26px;
     }
-    &:hover {
-      box-shadow: 2px 3px 10px 1px rgb(167, 176, 183);
-    }
   }
 
-  // .leaders__link
+  // .documents__link
 
   &__link {
   }
-}
-.link-leaders {
-  padding: 10px;
-  display: flex;
-  align-items: flex-start;
-  column-gap: 10px;
-  // .link-leaders__image
 
-  &__image {
-    flex: 0 0 265px;
-  }
+  // .documents__type
 
-  // .link-leaders__item
-
-  &__item {
-    transition: 0.3s;
-    max-width: 250px;
-    border: 2px solid rgba(233, 255, 34, 0.842);
-    border-radius: 10px;
+  &__type {
+    color: #336699;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS',
+      sans-serif;
     &:hover {
-      box-shadow: 2px 3px 10px 1px rgb(167, 176, 183);
+      text-decoration: underline;
     }
-  }
-
-  // .link-leaders__info
-
-  &__info {
-  }
-
-  // .link-leaders__name
-
-  &__name {
-    color: #336699;
-    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS',
-      sans-serif;
-    font-weight: bold;
-    font-size: 22px;
-    margin: 0px 0px 8px 0px;
-  }
-
-  // .link-leaders__status
-
-  &__status {
-    color: #336699;
-    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS',
-      sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    margin: 0px 0px 14px 0px;
-  }
-
-  // .link-leaders__tel
-
-  &__tel {
-    color: #797979;
-    font-size: 12px;
-    text-align: justify;
   }
 }
 
