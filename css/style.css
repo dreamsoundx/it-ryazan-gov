@@ -206,8 +206,8 @@ body {
   width: 270px;
   background: #fff;
   border-radius: 0px 0px 5px 5px;
-  -webkit-box-shadow: 1px 1px 2px 1px rgb(167, 176, 183);
-          box-shadow: 1px 1px 2px 1px rgb(167, 176, 183);
+  -webkit-box-shadow: 2px 1px 2px 1px rgb(167, 176, 183);
+          box-shadow: 2px 1px 2px 1px rgb(167, 176, 183);
   display: none;
   padding: 5px 0px;
 }
