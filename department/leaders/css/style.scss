@@ -150,6 +150,7 @@ body {
   // .menu__item
 
   &__item {
+    position: relative;
     flex: 1 1 33.333%;
     border-left: 2px rgb(167, 176, 183) solid;
     // box-shadow: 2px 0px 1px rgb(167, 176, 183),
@@ -184,7 +185,6 @@ body {
   // .item-menu__link
 
   &__text {
-    position: relative;
     font-size: 13px;
     font-weight: bold;
     color: #1c619b;
