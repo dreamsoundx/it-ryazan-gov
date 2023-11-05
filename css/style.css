@@ -205,19 +205,27 @@ body {
   left: 0;
   width: 270px;
   background: #fff;
-  display: none;
-}
-.docs__item {
-  padding: 5px;
-  width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0px 0px 5px 5px;
   -webkit-box-shadow: 1px 1px 2px 1px rgb(167, 176, 183);
           box-shadow: 1px 1px 2px 1px rgb(167, 176, 183);
+  display: none;
+  padding: 5px 0px;
+}
+.docs__item {
+  width: 100%;
+}
+.docs__item:not(:last-child) {
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
 }
 .docs__link {
   font-size: 13px;
   color: #1c619b;
+}
+.docs__text {
+  padding: 5px;
+}
+.docs__text:hover {
+  background-color: rgb(210, 224, 234);
 }
 
 main {
