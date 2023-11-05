@@ -173,6 +173,7 @@ body {
   border-right: 2px rgb(167, 176, 183) solid;
 }
 .menu__item {
+  position: relative;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 33.333%;
           flex: 1 1 33.333%;
@@ -181,6 +182,9 @@ body {
 .menu__item:hover {
   background: -webkit-gradient(linear, left bottom, left top, from(rgb(187, 208, 223)), to(rgb(243, 246, 249)));
   background: linear-gradient(0deg, rgb(187, 208, 223) 0%, rgb(243, 246, 249) 100%);
+}
+.menu__item:hover .docs {
+  display: initial;
 }
 .menu__item-selected {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(253, 253, 253, 0)), to(rgb(180, 184, 187)));
@@ -193,6 +197,26 @@ body {
 .item-menu__text {
   font-size: 13px;
   font-weight: bold;
+  color: #1c619b;
+}
+
+.docs {
+  position: absolute;
+  left: 0;
+  width: 270px;
+  background: #fff;
+  display: none;
+}
+.docs__item {
+  padding: 5px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 5px 5px;
+  -webkit-box-shadow: 1px 1px 2px 1px rgb(167, 176, 183);
+          box-shadow: 1px 1px 2px 1px rgb(167, 176, 183);
+}
+.docs__link {
+  font-size: 13px;
   color: #1c619b;
 }
 

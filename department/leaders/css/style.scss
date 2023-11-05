@@ -156,6 +156,9 @@ body {
     //   2px 0px 1px rgb(167, 176, 183) inset;
 
     &:hover {
+      .docs {
+        display: initial;
+      }
       background: linear-gradient(
         0deg,
         rgba(187, 208, 223, 1) 0%,
@@ -181,8 +184,28 @@ body {
   // .item-menu__link
 
   &__text {
+    position: relative;
     font-size: 13px;
     font-weight: bold;
+    color: #1c619b;
+  }
+}
+
+.docs {
+  position: absolute;
+  left: 0;
+  width: 270px;
+  background: #fff;
+  display: none;
+  &__item {
+    padding: 5px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 1px 1px 2px 1px rgb(167, 176, 183);
+  }
+  &__link {
+    font-size: 13px;
     color: #1c619b;
   }
 }
